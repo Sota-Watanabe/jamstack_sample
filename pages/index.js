@@ -11,6 +11,7 @@ const Home = ({blogs}) => {
             <Link href="/blogs/[id]" as={`blogs/${blog.id}`}>
               <a>
                 <h2>{blog.title}</h2>
+                <p>add Test!</p>
               </a>
             </Link>
             {blog.tags.map(tag => (
