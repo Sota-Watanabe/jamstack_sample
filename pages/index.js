@@ -4,14 +4,13 @@ import Link from 'next/link';
 const Home = ({blogs}) => {
   return (
     <div>
-      <h2>最新の記事</h2>
+      <h2>最新の記事だよ</h2>
       <div>
         {blogs.map(blog => (
           <React.Fragment key={blog.id}>
             <Link href="/blogs/[id]" as={`blogs/${blog.id}`}>
               <a>
-                <h2>{blog.title}</h2>
-                <p>add Test!</p>
+                <h2>{blog.title}!!!</h2>
               </a>
             </Link>
             {blog.tags.map(tag => (
