@@ -4,6 +4,7 @@ const BlogId = ({blog}) => {
   return (
     <div>
       <h1>{blog.title}</h1>
+      <h2>この行はnext.jsで書いた</h2>
       <div>
         {blog.tags.map(tag => (
           <React.Fragment key={tag.id}>
@@ -12,7 +13,6 @@ const BlogId = ({blog}) => {
         ))}
       </div>
       <div dangerouslySetInnerHTML={{__html: `${blog.body}`}}></div>
-      <h2>この行はnext.jsで書いた</h2>
     </div>
   );
 };
