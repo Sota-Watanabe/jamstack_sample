@@ -12,6 +12,7 @@ const BlogId = ({blog}) => {
         ))}
       </div>
       <div dangerouslySetInnerHTML={{__html: `${blog.body}`}}></div>
+      <h2>この行はnext.jsで書いた</h2>
     </div>
   );
 };
